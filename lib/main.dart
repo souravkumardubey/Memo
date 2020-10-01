@@ -89,21 +89,6 @@ class MemoHome extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           item(),
-          item(),
-          item(),
-          item(),
-          item(),
-          item(),
-          item(),
-          item(),
-          item(),
-          item(),
-          item(),
-          item(),
-          item(),
-          item(),
-          item(),
-          item(),
         ],
       ),
     );
