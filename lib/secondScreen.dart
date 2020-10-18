@@ -5,15 +5,8 @@ void main() {
   runApp(MyStatefulWidget());
 }
 
-class MyStatefulWidget extends StatefulWidget {
-  MyStatefulWidget({Key key}) : super(key: key);
 
-  @override
-  MyApp createState() => MyApp();
-}
-
-class MyApp extends State<MyStatefulWidget> {
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -26,7 +19,13 @@ class MyApp extends State<MyStatefulWidget> {
         body: SafeArea(
           child: Container(
             color: Colors.white,
-            child: Center(child: Text("Second Screen"),),
+            child: Container(
+            child: Column(
+            children: [
+            Text("Second Screen"),
+            ],
+            ),
+            ),
           ),
         ),
        
